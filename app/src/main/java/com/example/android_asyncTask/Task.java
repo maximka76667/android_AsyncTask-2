@@ -32,7 +32,7 @@ public class Task extends AsyncTask<Integer, Integer, Long> {
         int n = integers[0];
         dialog.setMax(n - 1);
         if (n < 0) throw new Error("Tiene que ser >= 0");
-        Long factorial = Long.valueOf(1);
+        long factorial = 1;
         for (int i = 2; i <= n; i++) {
             factorial *= i;
             try {
